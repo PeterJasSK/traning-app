@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Zoznam cieľov{% endblock %}
+
+{% block content %}
+    <h1>Zoznam cieľov</h1>
+
+    <!-- Modré tlačidlo na pridanie goal -->
+    <a href="{% url 'add_goal' %}" class="btn-blue">Pridať goal</a>
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Používateľ</th>
+                <th>Popis</th>
+                <th>Cieľový dátum</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for g in goals %}
+            <tr>
+                <td>{{ g.user.username }}</td>
+                <td>{{ g.description }}</td>
+                <td>{{ g.target_date }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3" class="no-data">Žiadne ciele</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'home' %}" class="btn-blue">Späť</a>
+{% endblock %}

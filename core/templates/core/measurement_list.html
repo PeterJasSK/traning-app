@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block title %}Zoznam meraní{% endblock %}
+
+{% block content %}
+<h2>Zoznam meraní</h2>
+<a href="{% url 'add_measurement' %}" class="btn-blue">Pridať meranie</a>
+
+{% if request.user.role == 'trainer' %}
+<form method="GET" class="form-select-user">
+    <label for="trainee-select">Vybrať zverenca:</label>
+    <select name="trainee" id="trainee-select" onchange="this.form.submit()">
+        <option value="">Všetci zverenci</option>
+        {% for trainee in trainees %}
+            <option value="{{ trainee.id }}" {% if selected_trainee and selected_trainee.id == trainee.id %}selected{% endif %}>
+                {{ trainee.username }}
+            </option>
+        {% endfor %}
+    </select>
+</form>
+{% endif %}
+
+<table>
+    <thead>
+        <tr>
+            <th>Používateľ</th>
+            <th>Dátum</th>
+            <th>Váha</th>
+            <th>Hrudník</th>
+            <th>Pás</th>
+            <th>Biceps</th>
+            <th>Stehno</th>
+            <th>Lýtko</th>
+            <th>Fotka</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for measurement in measurements %}
+        <tr>
+            <td>
+                <a href="{% url 'measurement_charts' user_id=measurement.user.id %}">
+                    {{ measurement.user.username }}
+                </a>
+            </td>
+            <td>{{ measurement.date|date:"F j, Y" }}</td>
+            <td>{{ measurement.weight|default_if_none:"N/A" }} kg</td>
+            <td>{{ measurement.chest|default_if_none:"N/A" }} cm</td>
+            <td>{{ measurement.waist|default_if_none:"N/A" }} cm</td>
+            <td>{{ measurement.biceps|default_if_none:"N/A" }} cm</td>
+            <td>{{ measurement.thigh|default_if_none:"N/A" }} cm</td>
+            <td>{{ measurement.calf|default_if_none:"N/A" }} cm</td>
+            <td>
+                {% if measurement.photo %}
+                    <a href="{{ measurement.photo.url }}" target="_blank">
+                        <img src="{{ measurement.photo.url }}"
+                             alt="Meranie" style="width: 50px; height: auto;">
+                    </a>
+                {% else %}
+                    N/A
+                {% endif %}
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="9">Žiadne merania zatiaľ neboli pridané.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

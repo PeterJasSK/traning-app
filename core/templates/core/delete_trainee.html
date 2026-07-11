@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Zmazať zverenca{% endblock %}
+{% block content %}
+<h2>Vymazať zverenca: {{ trainee.username }}</h2>
+<form method="post">
+  {% csrf_token %}
+  <button type="submit" class="btn-red">Áno, zmazať</button>
+  <a href="{% url 'user_list' %}">Zrušiť</a>
+</form>
+{% endblock %}

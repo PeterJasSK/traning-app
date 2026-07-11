@@ -1,0 +1,8 @@
+{% for msg in messages %}
+  <div class="message {% if msg.sender == request.user %}sent{% else %}received{% endif %}">
+    <div class="message-text">{{ msg.text }}</div>
+    <div class="message-time">{{ msg.timestamp|date:"d.m.Y H:i" }}</div>
+  </div>
+{% empty %}
+  <p>Žiadne správy.</p>
+{% endfor %}

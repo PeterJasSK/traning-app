@@ -1,0 +1,365 @@
+Last login: Sat Nov 15 09:08:37 on console
+janjas@Jans-MacBook-Air ~ % ls -al ~/.ssh
+ls: /Users/janjas/.ssh: No such file or directory
+janjas@Jans-MacBook-Air ~ % ls
+Applications				Movies
+Booking Form - Surf Camp.pdf		Music
+CarRent2025HolidayLisboa-Sagres.pdf	Pictures
+Desktop					Public
+Documents				blog
+Downloads				booking Sommer.pdf
+Hokej.jpg				objc.scan
+IPadresaziadostJJ.pdf			polar
+JAN JAS booking.pdf			venv
+Library					voucherAuto LIsbonLeto 2025.pdf
+janjas@Jans-MacBook-Air ~ % cd desktop
+janjas@Jans-MacBook-Air desktop % ls
+Delongi extrawarranty_sk.pdf
+Dom pohlad balkon spalna.jpeg
+Dom pohlad vzadu.jpg
+Izba deti 5,4X3,1 m.jpg
+Jakub Jas 5C.pdf
+Jakub Jas 6C.pdf
+Navratka Jakub Jas.pdf
+Obyvacka 4,5 X 4,8m +kuchyna.jpg
+Odkupl Uniqua JJ Sep 26 2025.pdf
+Potvrdenie o nastupeni Jakub Jas.pdf
+Screenshot 2021-10-29 at 19.36.16.png
+Screenshot 2022-06-03 at 19.06.01.png
+Screenshot 2022-09-18 at 11.20.24.png
+Screenshot 2022-12-05 at 12.32.29.png
+Screenshot 2023-03-12 at 18.12.40.png
+Screenshot 2023-04-18 at 13.47.02.png
+Screenshot 2023-05-16 at 14.33.01.png
+Screenshot 2023-08-18 at 13.51.11.png
+Screenshot 2023-08-21 at 12.36.20.png
+Screenshot 2023-09-05 at 10.51.14.png
+Screenshot 2023-09-05 at 11.25.04.png
+Screenshot 2023-09-06 at 09.04.45.png
+Screenshot 2023-09-07 at 09.49.18.png
+Screenshot 2023-09-07 at 09.50.25.png
+Screenshot 2023-09-20 at 14.44.47.png
+Screenshot 2023-10-19 at 15.39.34.png
+Screenshot 2023-10-20 at 08.07.01.png
+Screenshot 2024-01-05 at 14.46.44.png
+Screenshot 2024-01-05 at 14.49.37.png
+Screenshot 2024-07-31 at 10.31.01.png
+Screenshot 2024-08-09 at 14.12.59.png
+Screenshot 2024-08-09 at 14.14.24.png
+Screenshot 2024-08-27 at 16.53.26.png
+Screenshot 2024-08-27 at 17.02.01.png
+Screenshot 2024-09-09 at 13.58.02.png
+Screenshot 2024-10-05 at 18.28.27.png
+Screenshot 2024-11-03 at 19.57.12.png
+Screenshot 2024-11-06 at 18.23.37.png
+Screenshot 2024-11-09 at 09.38.34.png
+Screenshot 2024-12-17 at 10.15.31.png
+Screenshot 2025-01-20 at 22.09.06.png
+Screenshot 2025-02-10 at 18.53.53.png
+Screenshot 2025-02-16 at 11.44.49.png
+Screenshot 2025-03-14 at 16.50.16.png
+Screenshot 2025-03-17 at 14.01.54.png
+Screenshot 2025-03-26 at 17.04.35.png
+Screenshot 2025-03-26 at 17.05.55.png
+Screenshot 2025-03-26 at 18.19.02.png
+Screenshot 2025-05-01 at 14.39.41.png
+Screenshot 2025-05-27 at 10.05.49.png
+Screenshot 2025-05-30 at 17.21.32.png
+Screenshot 2025-06-06 at 21.20.18.png
+Screenshot 2025-06-19 at 12.04.25.png
+Screenshot 2025-06-19 at 12.04.38.png
+Screenshot 2025-06-20 at 16.18.55.png
+Screenshot 2025-08-04 at 19.29.32.png
+Screenshot 2025-08-05 at 14.33.05.png
+Screenshot 2025-08-06 at 11.04.29.png
+Screenshot 2025-08-06 at 11.11.29.png
+Screenshot 2025-08-06 at 11.28.09.png
+Screenshot 2025-08-06 at 11.31.16.png
+Screenshot 2025-08-06 at 11.42.54.png
+Screenshot 2025-08-07 at 13.19.39.png
+Screenshot 2025-08-07 at 13.20.58.png
+Screenshot 2025-08-07 at 13.21.59.png
+Screenshot 2025-08-07 at 13.37.55.png
+Screenshot 2025-08-07 at 13.59.58.png
+Screenshot 2025-08-07 at 14.12.15.png
+Screenshot 2025-08-22 at 15.36.56.png
+Screenshot 2025-08-22 at 15.37.11.png
+Screenshot 2025-08-22 at 20.49.32.png
+Screenshot 2025-08-23 at 20.45.36.png
+Screenshot 2025-08-25 at 09.57.38.png
+Screenshot 2025-08-25 at 14.30.01.png
+Screenshot 2025-08-25 at 14.31.21.png
+Screenshot 2025-08-25 at 14.32.06.png
+Screenshot 2025-08-25 at 14.40.41.png
+Screenshot 2025-08-26 at 08.13.19.png
+Screenshot 2025-08-26 at 08.15.25.png
+Screenshot 2025-08-26 at 08.17.41.png
+Screenshot 2025-08-26 at 09.25.54.png
+Screenshot 2025-08-26 at 09.26.03.png
+Screenshot 2025-08-28 at 21.31.56.png
+Screenshot 2025-09-20 at 14.33.23.png
+Screenshot 2025-09-21 at 17.22.13.png
+Screenshot 2025-09-21 at 20.25.23.png
+Screenshot 2025-09-21 at 20.47.33.png
+Screenshot 2025-09-21 at 21.03.31.png
+Screenshot 2025-09-21 at 21.06.22.png
+Screenshot 2025-09-21 at 21.09.23.png
+Screenshot 2025-09-21 at 21.11.56.png
+Screenshot 2025-09-21 at 21.23.33.png
+Screenshot 2025-09-21 at 21.27.15.png
+Screenshot 2025-09-21 at 21.28.36.png
+Screenshot 2025-09-21 at 21.31.07.png
+Screenshot 2025-09-21 at 21.38.34.png
+Screenshot 2025-09-21 at 21.49.25.png
+Screenshot 2025-09-21 at 22.02.46.png
+Screenshot 2025-09-21 at 22.14.55.png
+Screenshot 2025-09-21 at 22.20.12.png
+Screenshot 2025-09-22 at 18.14.53.png
+Screenshot 2025-09-22 at 18.57.13.png
+Screenshot 2025-09-22 at 19.42.26.png
+Screenshot 2025-09-22 at 19.45.07.png
+Screenshot 2025-09-22 at 19.45.47.png
+Screenshot 2025-09-23 at 20.54.06.png
+Screenshot 2025-09-23 at 20.57.41.png
+Screenshot 2025-09-23 at 21.18.55.png
+Screenshot 2025-09-23 at 21.22.30.png
+Screenshot 2025-09-25 at 20.53.57.png
+Screenshot 2025-09-26 at 10.25.52.png
+Screenshot 2025-09-26 at 16.10.33.png
+Screenshot 2025-09-27 at 16.45.14.png
+Screenshot 2025-09-27 at 16.59.04.png
+Screenshot 2025-09-27 at 17.11.43.png
+Screenshot 2025-09-27 at 18.38.32.png
+Screenshot 2025-09-27 at 18.49.31.png
+Screenshot 2025-09-27 at 18.52.47.png
+Screenshot 2025-09-27 at 19.08.58.png
+Screenshot 2025-10-25 at 10.01.25.png
+Screenshot 2025-10-28 at 09.15.14.png
+Screenshot 2025-11-08 at 21.48.45.png
+Screenshot 2025-11-09 at 10.54.50.png
+Spalna 4,2 X 4,6m.jpeg
+Starboard ceny.numbers
+Vyhlasenie JKATU KE 2023.pdf
+Vyhodnotenie mladeže JK ATU KE Zostatok.numbers
+Vyhodnotenie mladeže JK ATU KE Zostatok.xlsx
+World Raceboard 2022
+jj_django_app
+jjapp
+my_django_app
+myproject
+projectblog
+projectblogjj
+trener_app
+trening_app
+vyhlasenie-jkatu-2023.pdf
+janjas@Jans-MacBook-Air desktop % cd trener_app
+janjas@Jans-MacBook-Air trener_app % ls -al ~/.ssh
+ls: /Users/janjas/.ssh: No such file or directory
+janjas@Jans-MacBook-Air trener_app % ssh-keygen -t ed25519 -C “janjas150@gmail.com"
+dquote> eval "$(ssh-agent -s)"
+dquote> ssh-add ~/.ssh/id_ed25519
+dquote> cat ~/.ssh/id_ed25519.pub
+dquote> git remote set-url origin git@github.com:JJSVK150/trener_app.git
+dquote> 
+dquote> 
+janjas@Jans-MacBook-Air trener_app % ssh-keygen -t ed25519 -C "janjas150@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/Users/janjas/.ssh/id_ed25519):     
+Created directory '/Users/janjas/.ssh'.
+Enter passphrase for "/Users/janjas/.ssh/id_ed25519" (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/janjas/.ssh/id_ed25519
+Your public key has been saved in /Users/janjas/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:skLNfVTb1rTD87FbqJFe8D23O+xwGnfCQF9KDK6ppUY janjas150@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|            o   .|
+|           o =.o.|
+|          . = =*o|
+|     o . . + B =*|
+|    . + E = + *o=|
+|   .   + = . *  *|
+|    . . +   oo+=.|
+|     . .      *+o|
+|             ..o.|
++----[SHA256]-----+
+janjas@Jans-MacBook-Air trener_app % eval "$(ssh-agent -s)"
+Agent pid 49364
+janjas@Jans-MacBook-Air trener_app % ssh-add ~/.ssh/id_ed25519
+Identity added: /Users/janjas/.ssh/id_ed25519 (janjas150@gmail.com)
+janjas@Jans-MacBook-Air trener_app % cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICkAP0fpgB/xAq3Grrl4xsyzYsjiDXeiGQg5S4361vz/ janjas150@gmail.com
+janjas@Jans-MacBook-Air trener_app % git remote set-url origin git@github.com:JJSVK150/trener_app.git
+janjas@Jans-MacBook-Air trener_app % ssh -T git@github.com
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+janjas@Jans-MacBook-Air trener_app % cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICkAP0fpgB/xAq3Grrl4xsyzYsjiDXeiGQg5S4361vz/ janjas150@gmail.com
+janjas@Jans-MacBook-Air trener_app % ssh -T git@github.com
+Hi JJSVK150! You've successfully authenticated, but GitHub does not provide shell access.
+janjas@Jans-MacBook-Air trener_app % git add .
+janjas@Jans-MacBook-Air trener_app % git commit -m "Push current version"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+janjas@Jans-MacBook-Air trener_app % git push -u origin main
+ERROR: user:228663653:JJSVK150
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+janjas@Jans-MacBook-Air trener_app % git remote -v
+origin	git@github.com:JJSVK150/trener_app.git (fetch)
+origin	git@github.com:JJSVK150/trener_app.git (push)
+janjas@Jans-MacBook-Air trener_app % eval "$(ssh-agent -s)"
+Agent pid 49546
+janjas@Jans-MacBook-Air trener_app % ssh-add ~/.ssh/id_ed25519
+Identity added: /Users/janjas/.ssh/id_ed25519 (janjas150@gmail.com)
+janjas@Jans-MacBook-Air trener_app % ssh -T git@github.com
+Hi JJSVK150! You've successfully authenticated, but GitHub does not provide shell access.
+janjas@Jans-MacBook-Air trener_app % git push -u origin main
+ERROR: user:228663653:JJSVK150
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+janjas@Jans-MacBook-Air trener_app % git remote -v
+origin	git@github.com:JJSVK150/trener_app.git (fetch)
+origin	git@github.com:JJSVK150/trener_app.git (push)
+janjas@Jans-MacBook-Air trener_app % git remote set-url origin git@github.com:JJSVK150/trener_app.git
+janjas@Jans-MacBook-Air trener_app % git credential-osxkeychain erase
+
+failed to erase: -1
+janjas@Jans-MacBook-Air trener_app % host=github.com
+janjas@Jans-MacBook-Air trener_app % git credential-osxkeychain erase
+host=github.com
+protocol=https
+
+failed to erase: -1
+janjas@Jans-MacBook-Air trener_app % 
+janjas@Jans-MacBook-Air trener_app % git push -u origin main
+ERROR: user:228663653:JJSVK150
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+janjas@Jans-MacBook-Air trener_app % git remote set-url origin git@github.com:JJSVK150/trener_app.git
+janjas@Jans-MacBook-Air trener_app % git remote -v
+origin	git@github.com:JJSVK150/trener_app.git (fetch)
+origin	git@github.com:JJSVK150/trener_app.git (push)
+janjas@Jans-MacBook-Air trener_app % git credential-osxkeychain erase
+host=github.com
+protocol=https
+
+failed to erase: -1
+janjas@Jans-MacBook-Air trener_app % 
+janjas@Jans-MacBook-Air trener_app % git remote set-url origin git@github.com:JJSVK150/trener_app.git
+janjas@Jans-MacBook-Air trener_app % git remote -v
+origin	git@github.com:JJSVK150/trener_app.git (fetch)
+origin	git@github.com:JJSVK150/trener_app.git (push)
+janjas@Jans-MacBook-Air trener_app % eval "$(ssh-agent -s)"
+Agent pid 49603
+janjas@Jans-MacBook-Air trener_app % ssh-add ~/.ssh/id_ed25519
+Identity added: /Users/janjas/.ssh/id_ed25519 (janjas150@gmail.com)
+janjas@Jans-MacBook-Air trener_app % ssh -T git@github.com
+Hi JJSVK150! You've successfully authenticated, but GitHub does not provide shell access.
+janjas@Jans-MacBook-Air trener_app % git push -u origin main
+ERROR: user:228663653:JJSVK150
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+janjas@Jans-MacBook-Air trener_app % git push -u origin main
+ERROR: user:228663653:JJSVK150
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+janjas@Jans-MacBook-Air trener_app % git remote -v
+origin	git@github.com:JJSVK150/trener_app.git (fetch)
+origin	git@github.com:JJSVK150/trener_app.git (push)
+janjas@Jans-MacBook-Air trener_app % ssh-add -l
+256 SHA256:skLNfVTb1rTD87FbqJFe8D23O+xwGnfCQF9KDK6ppUY janjas150@gmail.com (ED25519)
+janjas@Jans-MacBook-Air trener_app % ssh -T git@github.com
+Hi JJSVK150! You've successfully authenticated, but GitHub does not provide shell access.
+janjas@Jans-MacBook-Air trener_app % git pull origin main --allow-unrelated-histories
+ERROR: user:228663653:JJSVK150
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+janjas@Jans-MacBook-Air trener_app % git remote set-url origin git@github.com:JJSVK150/trener_app.git
+janjas@Jans-MacBook-Air trener_app % git remote -v
+origin	git@github.com:JJSVK150/trener_app.git (fetch)
+origin	git@github.com:JJSVK150/trener_app.git (push)
+janjas@Jans-MacBook-Air trener_app % git credential-osxkeychain erase
+host=github.com
+protocol=https
+
+failed to erase: -1
+janjas@Jans-MacBook-Air trener_app % 
+janjas@Jans-MacBook-Air trener_app % ssh -T git@github.com
+Hi JJSVK150! You've successfully authenticated, but GitHub does not provide shell access.
+janjas@Jans-MacBook-Air trener_app % git remote -v
+origin	git@github.com:JJSVK150/trener_app.git (fetch)
+origin	git@github.com:JJSVK150/trener_app.git (push)
+janjas@Jans-MacBook-Air trener_app % git remote set-url origin git@github.com:JJSVK150/trener_app.git
+janjas@Jans-MacBook-Air trener_app % git pull origin main --allow-unrelated-histories
+ERROR: user:228663653:JJSVK150
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+janjas@Jans-MacBook-Air trener_app % git push -u origin main
+ERROR: user:228663653:JJSVK150
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+janjas@Jans-MacBook-Air trener_app % nano setup_push.sh
+
+  UW PICO 5.09                                                     File: setup_push.sh                                                      Modified  
+
+if [ ! -f "~/.ssh/id_ed25519" ]; then
+    ssh-keygen -t ed25519 -C "janjas150@gmail.com" -f ~/.ssh/id_ed25519 -N ""
+    echo "SSH key generated."
+fi
+
+# Start ssh-agent and add key
+eval "$(ssh-agent -s)"  
+ssh-add ~/.ssh/id_ed25519
+    
+# Show SSH public key for GitHub
+echo ""
+echo "Copy the following key and add it to GitHub → Settings → SSH and GPG keys → New SSH key:"
+cat ~/.ssh/id_ed25519.pub
+echo ""
+
+# Stage all files
+git add .
+
+# Commit changes
+git commit -m "Upload current version from PythonAnywhere" 2>/dev/null || echo "Nothing to commit"
+  
+# Test SSH connection
+ssh -T git@github.com
+
+echo ""
+echo "If SSH authentication succeeds, run:"
+echo "git push -u origin main"
+
+
+                      
+
+
+
+
+                                                                                                                                                      
+^G Get Help              ^O WriteOut              ^R Read File             ^Y Prev Pg               ^K Cut Text              ^C Cur Pos               
+^X Exit                  ^J Justify               ^W Where is              ^V Next Pg               ^U UnCut Text            ^T To Spell             

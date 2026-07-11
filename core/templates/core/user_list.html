@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Používatelia{% endblock %}
+{% block content %}
+<h2>Používatelia</h2>
+
+{% if user.role == 'trainer' %}
+  <a href="{% url 'add_trainee' %}" class="btn-blue">Pridať zverenca</a>
+{% endif %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Chat / Fotky</th>
+      {% if user.role == 'trainer' %}
+        <th>Akcie</th>
+      {% endif %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for u in users %}
+      <tr>
+        <td>{{ u.username }}</td>
+        <td>{{ u.email }}</td>
+        <td>
+          <a href="{% url 'chat' u.id %}" class="btn-green">Otvoriť chat</a>
+          <a href="{% url 'compare_photos' u.id %}" class="btn-green">Porovnať fotky</a>
+        </td>
+        {% if user.role == 'trainer' %}
+          <td>
+            <a href="{% url 'edit_trainee' u.id %}" class="btn-blue">Upraviť</a>
+            <a href="{% url 'delete_trainee' u.id %}" class="btn-red">Zmazať</a>
+          </td>
+        {% endif %}
+      </tr>
+    {% empty %}
+      <tr>
+        <td colspan="4">Žiadni používatelia</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

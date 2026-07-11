@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Tréner – Domov{% endblock %}
+{% block content %}
+<h2>Vitaj, tréner!</h2>
+<p>Tu vidíš prehľad svojich zverencov a chat.</p>
+
+{% for trainee in trainees %}
+    <a href="{% url 'chat' trainee.id %}" class="btn-blue">Chat s {{ trainee.username }}</a>
+{% endfor %}
+{% endblock %}

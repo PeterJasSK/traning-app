@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Tréningová aplikácia{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="{% url 'home' %}" class="logo">TreningApp</a>
+            </div>
+            <div class="nav-right">
+                {% if user.is_authenticated %}
+                    <!-- Vždy dostupné -->
+                    <a href="{% url 'home' %}">Domov</a>
+                    <a href="{% url 'user_list' %}">Používatelia</a>
+                    <a href="{% url 'measurement_list' %}">Merania</a>
+                    <a href="{% url 'goal_list' %}">Ciele</a>
+
+                    {# --- Admin alebo hlavný tréner môže pridať trénera --- #}
+                    {% if user.is_staff or user.is_superuser %}
+                        <a href="{% url 'add_trainer' %}" class="btn-blue">Pridať trénera</a>
+                    {% endif %}
+
+                    {# --- Tréner môže pridať zverenca --- #}
+                    {% if user.role == 'trainer' %}
+                        <a href="{% url 'add_trainee' %}" class="btn-blue">Pridať zverenca</a>
+                    {% endif %}
+
+                    <a href="{% url 'logout' %}" class="btn-blue">Odhlásiť</a>
+                {% else %}
+                    <a href="{% url 'login' %}" class="btn-blue">Prihlásiť</a>
+                    {# Žiadne „Registrovať“ – registráciu rieši admin/tréner #}
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; JJ 2025 Tréningová aplikácia</p>
+    </footer>
+</body>
+</html>

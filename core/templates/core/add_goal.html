@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Pridať cieľ{% endblock %}
+
+{% block content %}
+    <h1>Pridať cieľ</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Uložiť</button>
+    </form>
+    <a href="{% url 'home' %}" class="btn-blue">Späť</a>
+{% endblock %}
