@@ -115,34 +115,6 @@ def add_trainer(request):
     return render(request, 'core/add_trainer.html', {'form': form})
 
 
-@login_required
-
-def register_trainer_view(request):
-    """Admin / superuser pridá trénera cez administratívnu registráciu (alternatíva k add_trainer)."""
-    if not request.user.is_staff and not request.user.is_superuser:
-        return HttpResponseForbidden("Nemáš oprávnenie.")
-    if request.method == 'POST':
-        form = AddTrainerForm(request.POST)
-        if form.is_valid():
-            trainer = form.save(commit=False)
-            trainer.role = 'trainer'
-            pwd = form.cleaned_data.get('password') if 'password' in form.cleaned_data else None
-            if pwd:
-                trainer.set_password(pwd)
-            trainer.save()
-            # admin nezapína main_trainer implicitne
-            return redirect('user_list')
-    else:
-        form = AddTrainerForm()
-    return render(request, 'core/register_trainer.html', {'form': form})
-
-
-@login_required
-def register_trainee_view(request):
-    """Trainer pridá trainee (alias add_trainee) - dostupné ak chceš samostatnú cestu."""
-    return add_trainee(request)
-
-
 # ---------- MEASUREMENTS ----------
 @login_required
 def add_measurement(request):

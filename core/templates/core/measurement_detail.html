@@ -3,15 +3,13 @@
 {% block title %}Detail fotky{% endblock %}
 
 {% block content %}
-<div class="container">
-    <h2>Fotka merania - {{ measurement.user.username }} ({{ measurement.date }})</h2>
-    
-    {% if measurement.photo %}
-        <img src="{{ measurement.photo.url }}" alt="foto" class="full-image">
-    {% else %}
-        <p>Fotka nie je k dispozícii.</p>
-    {% endif %}
+<h2>Fotka merania - {{ measurement.user.username }} ({{ measurement.date }})</h2>
 
-    <a href="{% url 'measurement_list' %}" class="btn-blue">Späť na zoznam</a>
-</div>
+{% if measurement.photo %}
+    <img src="{{ measurement.photo.url }}" alt="foto" class="full-image">
+{% else %}
+    <p>Fotka nie je k dispozícii.</p>
+{% endif %}
+
+<a href="{% url 'measurement_list' %}" class="btn-blue">Späť na zoznam</a>
 {% endblock %}

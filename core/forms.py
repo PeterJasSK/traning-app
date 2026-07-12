@@ -1,12 +1,6 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth.forms import AuthenticationForm
 from .models import CustomUser, Measurement, Goal, Message
-
-# --- Registrácia používateľa (základné) ---
-class CustomUserCreationForm(UserCreationForm):
-    class Meta:
-        model = CustomUser
-        fields = ['username', 'email', 'role']  # heslá sú riešené UserCreationForm
 
 # --- Login formulár ---
 class LoginForm(AuthenticationForm):

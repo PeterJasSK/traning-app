@@ -4,14 +4,13 @@
 <h2>Porovnanie fotiek – {{ trainee.username }}</h2>
 
 <form method="get">
-  <div class="photo-select" style="display:flex; flex-wrap:wrap; gap:10px;">
+  <div class="photo-select">
     {% for m in measurements %}
-      <label style="display:inline-block; width:150px; text-align:center;">
+      <label>
         <input type="checkbox" name="photos" value="{{ m.id }}"
                {% if m.id|stringformat:"s" in selected_ids %}checked{% endif %}>
         <br>
-        <img src="{{ m.photo.url }}" alt="Foto {{ m.date }}"
-             style="width:150px; height:auto; border:1px solid #ccc; border-radius:5px;">
+        <img src="{{ m.photo.url }}" alt="Foto {{ m.date }}">
         <div style="font-size:0.9em;">{{ m.date }}</div>
       </label>
     {% endfor %}
@@ -21,11 +20,10 @@
 
 {% if selected_measurements %}
   <h3 style="margin-top:30px;">Vybrané fotky</h3>
-  <div class="photo-comparison" style="display:flex; flex-wrap:wrap; gap:15px;">
+  <div class="photo-comparison">
     {% for m in selected_measurements %}
-      <div style="text-align:center;">
-        <img src="{{ m.photo.url }}" alt="Foto {{ m.date }}"
-             style="width:250px; height:auto; border:2px solid #666; border-radius:5px;">
+      <div class="compare-item">
+        <img src="{{ m.photo.url }}" alt="Foto {{ m.date }}">
         <div style="margin-top:5px;">{{ m.date }}</div>
       </div>
     {% endfor %}

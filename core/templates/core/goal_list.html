@@ -8,6 +8,7 @@
     <!-- Modré tlačidlo na pridanie goal -->
     <a href="{% url 'add_goal' %}" class="btn-blue">Pridať goal</a>
 
+    <div class="table-wrap">
     <table class="styled-table">
         <thead>
             <tr>
@@ -19,9 +20,9 @@
         <tbody>
             {% for g in goals %}
             <tr>
-                <td>{{ g.user.username }}</td>
-                <td>{{ g.description }}</td>
-                <td>{{ g.target_date }}</td>
+                <td data-label="Používateľ">{{ g.user.username }}</td>
+                <td data-label="Popis">{{ g.description }}</td>
+                <td data-label="Cieľový dátum">{{ g.target_date }}</td>
             </tr>
             {% empty %}
             <tr>
@@ -30,5 +31,6 @@
             {% endfor %}
         </tbody>
     </table>
+    </div>
     <a href="{% url 'home' %}" class="btn-blue">Späť</a>
 {% endblock %}

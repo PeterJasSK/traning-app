@@ -19,6 +19,7 @@
 </form>
 {% endif %}
 
+<div class="table-wrap">
 <table>
     <thead>
         <tr>
@@ -36,23 +37,23 @@
     <tbody>
         {% for measurement in measurements %}
         <tr>
-            <td>
+            <td data-label="Používateľ">
                 <a href="{% url 'measurement_charts' user_id=measurement.user.id %}">
                     {{ measurement.user.username }}
                 </a>
             </td>
-            <td>{{ measurement.date|date:"F j, Y" }}</td>
-            <td>{{ measurement.weight|default_if_none:"N/A" }} kg</td>
-            <td>{{ measurement.chest|default_if_none:"N/A" }} cm</td>
-            <td>{{ measurement.waist|default_if_none:"N/A" }} cm</td>
-            <td>{{ measurement.biceps|default_if_none:"N/A" }} cm</td>
-            <td>{{ measurement.thigh|default_if_none:"N/A" }} cm</td>
-            <td>{{ measurement.calf|default_if_none:"N/A" }} cm</td>
-            <td>
+            <td data-label="Dátum">{{ measurement.date|date:"F j, Y" }}</td>
+            <td data-label="Váha">{{ measurement.weight|default_if_none:"N/A" }} kg</td>
+            <td data-label="Hrudník">{{ measurement.chest|default_if_none:"N/A" }} cm</td>
+            <td data-label="Pás">{{ measurement.waist|default_if_none:"N/A" }} cm</td>
+            <td data-label="Biceps">{{ measurement.biceps|default_if_none:"N/A" }} cm</td>
+            <td data-label="Stehno">{{ measurement.thigh|default_if_none:"N/A" }} cm</td>
+            <td data-label="Lýtko">{{ measurement.calf|default_if_none:"N/A" }} cm</td>
+            <td data-label="Fotka">
                 {% if measurement.photo %}
                     <a href="{{ measurement.photo.url }}" target="_blank">
                         <img src="{{ measurement.photo.url }}"
-                             alt="Meranie" style="width: 50px; height: auto;">
+                             alt="Meranie" class="thumb">
                     </a>
                 {% else %}
                     N/A
@@ -66,5 +67,6 @@
         {% endfor %}
     </tbody>
 </table>
+</div>
 
 {% endblock %}
